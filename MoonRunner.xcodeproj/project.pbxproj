@@ -7,15 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46577F161B7B487F00E34C3B /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F151B7B487F00E34C3B /* Badge.m */; };
+		46577F191B7B48E800E34C3B /* BadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F181B7B48E800E34C3B /* BadgeController.m */; };
+		46577F1C1B7B538E00E34C3B /* BadgeEarnStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F1B1B7B538E00E34C3B /* BadgeEarnStatus.m */; };
+		46577F1F1B7B90BE00E34C3B /* BadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F1E1B7B90BE00E34C3B /* BadgeCell.m */; };
+		46577F221B7B916100E34C3B /* BadgesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F211B7B916100E34C3B /* BadgesTableViewController.m */; };
+		46577F251B7C3C7100E34C3B /* BadgeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F241B7C3C7100E34C3B /* BadgeDetailsViewController.m */; };
+		46577F281B7C740600E34C3B /* BadgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46577F271B7C740600E34C3B /* BadgeAnnotation.m */; };
 		46B22FF91B68E16700B9D0B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B22FF81B68E16700B9D0B2 /* main.m */; };
 		46B22FFC1B68E16700B9D0B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B22FFB1B68E16700B9D0B2 /* AppDelegate.m */; };
 		46B22FFF1B68E16700B9D0B2 /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46B22FFD1B68E16700B9D0B2 /* MoonRunner.xcdatamodeld */; };
-		46B230021B68E16700B9D0B2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B230011B68E16700B9D0B2 /* MasterViewController.m */; };
 		46B230051B68E16700B9D0B2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B230041B68E16700B9D0B2 /* DetailViewController.m */; };
 		46B230081B68E16700B9D0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B230061B68E16700B9D0B2 /* Main.storyboard */; };
 		46B2300A1B68E16700B9D0B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B230091B68E16700B9D0B2 /* Images.xcassets */; };
 		46B2300D1B68E16700B9D0B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B2300B1B68E16700B9D0B2 /* LaunchScreen.xib */; };
 		46B230191B68E16700B9D0B2 /* MoonRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B230181B68E16700B9D0B2 /* MoonRunnerTests.m */; };
+		46B230291B68E4AF00B9D0B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B230281B68E4AF00B9D0B2 /* MapKit.framework */; };
+		46B2302B1B68E4B600B9D0B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2302A1B68E4B600B9D0B2 /* CoreGraphics.framework */; };
+		46B2302D1B68E4C200B9D0B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2302C1B68E4C200B9D0B2 /* CoreData.framework */; };
+		46B2302F1B68E4CD00B9D0B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2302E1B68E4CD00B9D0B2 /* UIKit.framework */; };
+		46B230311B68E4DA00B9D0B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B230301B68E4DA00B9D0B2 /* Foundation.framework */; };
+		46B2305E1B68E8F200B9D0B2 /* ariel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230331B68E8F200B9D0B2 /* ariel.jpg */; };
+		46B2305F1B68E8F200B9D0B2 /* asteroid_belt.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230341B68E8F200B9D0B2 /* asteroid_belt.png */; };
+		46B230601B68E8F200B9D0B2 /* atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230351B68E8F200B9D0B2 /* atmosphere.jpg */; };
+		46B230611B68E8F200B9D0B2 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46B230361B68E8F200B9D0B2 /* badges.txt */; };
+		46B230621B68E8F200B9D0B2 /* blue-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230371B68E8F200B9D0B2 /* blue-btn.png */; };
+		46B230631B68E8F200B9D0B2 /* callisto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230381B68E8F200B9D0B2 /* callisto.jpg */; };
+		46B230641B68E8F200B9D0B2 /* ceres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230391B68E8F200B9D0B2 /* ceres.jpg */; };
+		46B230651B68E8F200B9D0B2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303A1B68E8F200B9D0B2 /* Default-568h@2x.png */; };
+		46B230661B68E8F200B9D0B2 /* deimos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303B1B68E8F200B9D0B2 /* deimos.jpg */; };
+		46B230671B68E8F200B9D0B2 /* dione.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303C1B68E8F200B9D0B2 /* dione.jpg */; };
+		46B230681B68E8F200B9D0B2 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303D1B68E8F200B9D0B2 /* earth.jpg */; };
+		46B230691B68E8F200B9D0B2 /* enceladus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303E1B68E8F200B9D0B2 /* enceladus.jpg */; };
+		46B2306A1B68E8F200B9D0B2 /* europa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2303F1B68E8F200B9D0B2 /* europa.jpg */; };
+		46B2306B1B68E8F200B9D0B2 /* ganymede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230401B68E8F200B9D0B2 /* ganymede.jpg */; };
+		46B2306C1B68E8F200B9D0B2 /* green-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230411B68E8F200B9D0B2 /* green-btn.png */; };
+		46B2306D1B68E8F200B9D0B2 /* iapetus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230421B68E8F200B9D0B2 /* iapetus.jpg */; };
+		46B2306E1B68E8F200B9D0B2 /* Icon-App.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230431B68E8F200B9D0B2 /* Icon-App.png */; };
+		46B2306F1B68E8F200B9D0B2 /* Icon-Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230441B68E8F200B9D0B2 /* Icon-Settings.png */; };
+		46B230701B68E8F200B9D0B2 /* Icon-Spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230451B68E8F200B9D0B2 /* Icon-Spotlight.png */; };
+		46B230711B68E8F200B9D0B2 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230461B68E8F200B9D0B2 /* info@2x.png */; };
+		46B230721B68E8F200B9D0B2 /* interstellar_space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230471B68E8F200B9D0B2 /* interstellar_space.jpg */; };
+		46B230731B68E8F200B9D0B2 /* io.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230481B68E8F200B9D0B2 /* io.jpg */; };
+		46B230741B68E8F200B9D0B2 /* kuiper_belt.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230491B68E8F200B9D0B2 /* kuiper_belt.png */; };
+		46B230751B68E8F200B9D0B2 /* magnetotail.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304A1B68E8F200B9D0B2 /* magnetotail.png */; };
+		46B230761B68E8F200B9D0B2 /* mapPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304B1B68E8F200B9D0B2 /* mapPin@2x.png */; };
+		46B230771B68E8F200B9D0B2 /* mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304C1B68E8F200B9D0B2 /* mars.jpg */; };
+		46B230781B68E8F200B9D0B2 /* mimas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304D1B68E8F200B9D0B2 /* mimas.jpg */; };
+		46B230791B68E8F200B9D0B2 /* miranda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304E1B68E8F200B9D0B2 /* miranda.jpg */; };
+		46B2307A1B68E8F200B9D0B2 /* moon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2304F1B68E8F200B9D0B2 /* moon.jpg */; };
+		46B2307B1B68E8F200B9D0B2 /* oberon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230501B68E8F200B9D0B2 /* oberon.jpg */; };
+		46B2307C1B68E8F200B9D0B2 /* phobos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230511B68E8F200B9D0B2 /* phobos.jpg */; };
+		46B2307D1B68E8F200B9D0B2 /* pluto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230521B68E8F200B9D0B2 /* pluto.jpg */; };
+		46B2307E1B68E8F200B9D0B2 /* red-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230531B68E8F200B9D0B2 /* red-btn.png */; };
+		46B2307F1B68E8F200B9D0B2 /* rhea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230541B68E8F200B9D0B2 /* rhea.jpg */; };
+		46B230801B68E8F200B9D0B2 /* saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230551B68E8F200B9D0B2 /* saturn.jpg */; };
+		46B230811B68E8F200B9D0B2 /* spaceship-gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230561B68E8F200B9D0B2 /* spaceship-gold.png */; };
+		46B230821B68E8F200B9D0B2 /* spaceship-silver.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B230571B68E8F200B9D0B2 /* spaceship-silver.png */; };
+		46B230831B68E8F200B9D0B2 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46B230581B68E8F200B9D0B2 /* success.wav */; };
+		46B230841B68E8F200B9D0B2 /* tethys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B230591B68E8F200B9D0B2 /* tethys.jpg */; };
+		46B230851B68E8F200B9D0B2 /* titan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2305A1B68E8F200B9D0B2 /* titan.jpg */; };
+		46B230861B68E8F200B9D0B2 /* titania.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2305B1B68E8F200B9D0B2 /* titania.jpg */; };
+		46B230871B68E8F200B9D0B2 /* triton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2305C1B68E8F200B9D0B2 /* triton.jpg */; };
+		46B230881B68E8F200B9D0B2 /* umbriel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B2305D1B68E8F200B9D0B2 /* umbriel.jpg */; };
+		46B2308E1B68EF9E00B9D0B2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2308D1B68EF9E00B9D0B2 /* HomeViewController.m */; };
+		46B230911B68F04D00B9D0B2 /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B230901B68F04D00B9D0B2 /* NewRunViewController.m */; };
+		46B230941B68FA8500B9D0B2 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B230931B68FA8500B9D0B2 /* MathController.m */; };
+		46B230961B69008900B9D0B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B230951B69008900B9D0B2 /* CoreLocation.framework */; };
+		46BF6F641B7312FB00E74BAB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BF6F631B7312FB00E74BAB /* Location.m */; };
+		46BF6F671B7312FB00E74BAB /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BF6F661B7312FB00E74BAB /* Run.m */; };
+		46BF6F6A1B7316D200E74BAB /* MulticolorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BF6F691B7316D200E74BAB /* MulticolorPolylineSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +90,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46577F141B7B487F00E34C3B /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		46577F151B7B487F00E34C3B /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		46577F171B7B48E800E34C3B /* BadgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeController.h; sourceTree = "<group>"; };
+		46577F181B7B48E800E34C3B /* BadgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeController.m; sourceTree = "<group>"; };
+		46577F1A1B7B538E00E34C3B /* BadgeEarnStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeEarnStatus.h; sourceTree = "<group>"; };
+		46577F1B1B7B538E00E34C3B /* BadgeEarnStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeEarnStatus.m; sourceTree = "<group>"; };
+		46577F1D1B7B90BE00E34C3B /* BadgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCell.h; sourceTree = "<group>"; };
+		46577F1E1B7B90BE00E34C3B /* BadgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCell.m; sourceTree = "<group>"; };
+		46577F201B7B916100E34C3B /* BadgesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgesTableViewController.h; sourceTree = "<group>"; };
+		46577F211B7B916100E34C3B /* BadgesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgesTableViewController.m; sourceTree = "<group>"; };
+		46577F231B7C3C7100E34C3B /* BadgeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailsViewController.h; sourceTree = "<group>"; };
+		46577F241B7C3C7100E34C3B /* BadgeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailsViewController.m; sourceTree = "<group>"; };
+		46577F261B7C740600E34C3B /* BadgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeAnnotation.h; sourceTree = "<group>"; };
+		46577F271B7C740600E34C3B /* BadgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeAnnotation.m; sourceTree = "<group>"; };
 		46B22FF31B68E16700B9D0B2 /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B22FF71B68E16700B9D0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B22FF81B68E16700B9D0B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46B22FFA1B68E16700B9D0B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B22FFB1B68E16700B9D0B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		46B22FFE1B68E16700B9D0B2 /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
-		46B230001B68E16700B9D0B2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		46B230011B68E16700B9D0B2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		46B230031B68E16700B9D0B2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		46B230041B68E16700B9D0B2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		46B230071B68E16700B9D0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +118,67 @@
 		46B230121B68E16700B9D0B2 /* MoonRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B230171B68E16700B9D0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B230181B68E16700B9D0B2 /* MoonRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoonRunnerTests.m; sourceTree = "<group>"; };
+		46B230281B68E4AF00B9D0B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46B2302A1B68E4B600B9D0B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46B2302C1B68E4C200B9D0B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		46B2302E1B68E4CD00B9D0B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46B230301B68E4DA00B9D0B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46B230331B68E8F200B9D0B2 /* ariel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ariel.jpg; sourceTree = "<group>"; };
+		46B230341B68E8F200B9D0B2 /* asteroid_belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_belt.png; sourceTree = "<group>"; };
+		46B230351B68E8F200B9D0B2 /* atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atmosphere.jpg; sourceTree = "<group>"; };
+		46B230361B68E8F200B9D0B2 /* badges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badges.txt; sourceTree = "<group>"; };
+		46B230371B68E8F200B9D0B2 /* blue-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-btn.png"; sourceTree = "<group>"; };
+		46B230381B68E8F200B9D0B2 /* callisto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = callisto.jpg; sourceTree = "<group>"; };
+		46B230391B68E8F200B9D0B2 /* ceres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ceres.jpg; sourceTree = "<group>"; };
+		46B2303A1B68E8F200B9D0B2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		46B2303B1B68E8F200B9D0B2 /* deimos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deimos.jpg; sourceTree = "<group>"; };
+		46B2303C1B68E8F200B9D0B2 /* dione.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dione.jpg; sourceTree = "<group>"; };
+		46B2303D1B68E8F200B9D0B2 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		46B2303E1B68E8F200B9D0B2 /* enceladus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = enceladus.jpg; sourceTree = "<group>"; };
+		46B2303F1B68E8F200B9D0B2 /* europa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = europa.jpg; sourceTree = "<group>"; };
+		46B230401B68E8F200B9D0B2 /* ganymede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ganymede.jpg; sourceTree = "<group>"; };
+		46B230411B68E8F200B9D0B2 /* green-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-btn.png"; sourceTree = "<group>"; };
+		46B230421B68E8F200B9D0B2 /* iapetus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iapetus.jpg; sourceTree = "<group>"; };
+		46B230431B68E8F200B9D0B2 /* Icon-App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App.png"; sourceTree = "<group>"; };
+		46B230441B68E8F200B9D0B2 /* Icon-Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Settings.png"; sourceTree = "<group>"; };
+		46B230451B68E8F200B9D0B2 /* Icon-Spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight.png"; sourceTree = "<group>"; };
+		46B230461B68E8F200B9D0B2 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		46B230471B68E8F200B9D0B2 /* interstellar_space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interstellar_space.jpg; sourceTree = "<group>"; };
+		46B230481B68E8F200B9D0B2 /* io.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = io.jpg; sourceTree = "<group>"; };
+		46B230491B68E8F200B9D0B2 /* kuiper_belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kuiper_belt.png; sourceTree = "<group>"; };
+		46B2304A1B68E8F200B9D0B2 /* magnetotail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetotail.png; sourceTree = "<group>"; };
+		46B2304B1B68E8F200B9D0B2 /* mapPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapPin@2x.png"; sourceTree = "<group>"; };
+		46B2304C1B68E8F200B9D0B2 /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
+		46B2304D1B68E8F200B9D0B2 /* mimas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mimas.jpg; sourceTree = "<group>"; };
+		46B2304E1B68E8F200B9D0B2 /* miranda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miranda.jpg; sourceTree = "<group>"; };
+		46B2304F1B68E8F200B9D0B2 /* moon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon.jpg; sourceTree = "<group>"; };
+		46B230501B68E8F200B9D0B2 /* oberon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oberon.jpg; sourceTree = "<group>"; };
+		46B230511B68E8F200B9D0B2 /* phobos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phobos.jpg; sourceTree = "<group>"; };
+		46B230521B68E8F200B9D0B2 /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pluto.jpg; sourceTree = "<group>"; };
+		46B230531B68E8F200B9D0B2 /* red-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-btn.png"; sourceTree = "<group>"; };
+		46B230541B68E8F200B9D0B2 /* rhea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rhea.jpg; sourceTree = "<group>"; };
+		46B230551B68E8F200B9D0B2 /* saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn.jpg; sourceTree = "<group>"; };
+		46B230561B68E8F200B9D0B2 /* spaceship-gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spaceship-gold.png"; sourceTree = "<group>"; };
+		46B230571B68E8F200B9D0B2 /* spaceship-silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spaceship-silver.png"; sourceTree = "<group>"; };
+		46B230581B68E8F200B9D0B2 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		46B230591B68E8F200B9D0B2 /* tethys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tethys.jpg; sourceTree = "<group>"; };
+		46B2305A1B68E8F200B9D0B2 /* titan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titan.jpg; sourceTree = "<group>"; };
+		46B2305B1B68E8F200B9D0B2 /* titania.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titania.jpg; sourceTree = "<group>"; };
+		46B2305C1B68E8F200B9D0B2 /* triton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = triton.jpg; sourceTree = "<group>"; };
+		46B2305D1B68E8F200B9D0B2 /* umbriel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbriel.jpg; sourceTree = "<group>"; };
+		46B2308C1B68EF9E00B9D0B2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		46B2308D1B68EF9E00B9D0B2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		46B2308F1B68F04D00B9D0B2 /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
+		46B230901B68F04D00B9D0B2 /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
+		46B230921B68FA8500B9D0B2 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		46B230931B68FA8500B9D0B2 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		46B230951B69008900B9D0B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46BF6F621B7312FB00E74BAB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		46BF6F631B7312FB00E74BAB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		46BF6F651B7312FB00E74BAB /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		46BF6F661B7312FB00E74BAB /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		46BF6F681B7316D200E74BAB /* MulticolorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticolorPolylineSegment.h; sourceTree = "<group>"; };
+		46BF6F691B7316D200E74BAB /* MulticolorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticolorPolylineSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +186,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B230961B69008900B9D0B2 /* CoreLocation.framework in Frameworks */,
+				46B230311B68E4DA00B9D0B2 /* Foundation.framework in Frameworks */,
+				46B2302F1B68E4CD00B9D0B2 /* UIKit.framework in Frameworks */,
+				46B2302D1B68E4C200B9D0B2 /* CoreData.framework in Frameworks */,
+				46B2302B1B68E4B600B9D0B2 /* CoreGraphics.framework in Frameworks */,
+				46B230291B68E4AF00B9D0B2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +211,12 @@
 				46B22FF51B68E16700B9D0B2 /* MoonRunner */,
 				46B230151B68E16700B9D0B2 /* MoonRunnerTests */,
 				46B22FF41B68E16700B9D0B2 /* Products */,
+				46B230951B69008900B9D0B2 /* CoreLocation.framework */,
+				46B230301B68E4DA00B9D0B2 /* Foundation.framework */,
+				46B2302E1B68E4CD00B9D0B2 /* UIKit.framework */,
+				46B2302C1B68E4C200B9D0B2 /* CoreData.framework */,
+				46B2302A1B68E4B600B9D0B2 /* CoreGraphics.framework */,
+				46B230281B68E4AF00B9D0B2 /* MapKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +232,37 @@
 		46B22FF51B68E16700B9D0B2 /* MoonRunner */ = {
 			isa = PBXGroup;
 			children = (
+				46BF6F651B7312FB00E74BAB /* Run.h */,
+				46BF6F661B7312FB00E74BAB /* Run.m */,
+				46BF6F621B7312FB00E74BAB /* Location.h */,
+				46BF6F631B7312FB00E74BAB /* Location.m */,
 				46B22FFA1B68E16700B9D0B2 /* AppDelegate.h */,
 				46B22FFB1B68E16700B9D0B2 /* AppDelegate.m */,
-				46B230001B68E16700B9D0B2 /* MasterViewController.h */,
-				46B230011B68E16700B9D0B2 /* MasterViewController.m */,
+				46B2308C1B68EF9E00B9D0B2 /* HomeViewController.h */,
+				46B2308D1B68EF9E00B9D0B2 /* HomeViewController.m */,
+				46B2308F1B68F04D00B9D0B2 /* NewRunViewController.h */,
+				46B230901B68F04D00B9D0B2 /* NewRunViewController.m */,
+				46577F1D1B7B90BE00E34C3B /* BadgeCell.h */,
+				46577F1E1B7B90BE00E34C3B /* BadgeCell.m */,
+				46577F201B7B916100E34C3B /* BadgesTableViewController.h */,
+				46577F211B7B916100E34C3B /* BadgesTableViewController.m */,
+				46577F231B7C3C7100E34C3B /* BadgeDetailsViewController.h */,
+				46577F241B7C3C7100E34C3B /* BadgeDetailsViewController.m */,
 				46B230031B68E16700B9D0B2 /* DetailViewController.h */,
 				46B230041B68E16700B9D0B2 /* DetailViewController.m */,
+				46B230921B68FA8500B9D0B2 /* MathController.h */,
+				46B230931B68FA8500B9D0B2 /* MathController.m */,
+				46577F141B7B487F00E34C3B /* Badge.h */,
+				46577F151B7B487F00E34C3B /* Badge.m */,
+				46577F171B7B48E800E34C3B /* BadgeController.h */,
+				46577F181B7B48E800E34C3B /* BadgeController.m */,
+				46577F1A1B7B538E00E34C3B /* BadgeEarnStatus.h */,
+				46577F1B1B7B538E00E34C3B /* BadgeEarnStatus.m */,
 				46B230061B68E16700B9D0B2 /* Main.storyboard */,
+				46577F261B7C740600E34C3B /* BadgeAnnotation.h */,
+				46577F271B7C740600E34C3B /* BadgeAnnotation.m */,
+				46BF6F681B7316D200E74BAB /* MulticolorPolylineSegment.h */,
+				46BF6F691B7316D200E74BAB /* MulticolorPolylineSegment.m */,
 				46B230091B68E16700B9D0B2 /* Images.xcassets */,
 				46B2300B1B68E16700B9D0B2 /* LaunchScreen.xib */,
 				46B22FFD1B68E16700B9D0B2 /* MoonRunner.xcdatamodeld */,
@@ -104,6 +274,7 @@
 		46B22FF61B68E16700B9D0B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46B230321B68E8F200B9D0B2 /* moonrunner_resources */,
 				46B22FF71B68E16700B9D0B2 /* Info.plist */,
 				46B22FF81B68E16700B9D0B2 /* main.m */,
 			);
@@ -125,6 +296,56 @@
 				46B230171B68E16700B9D0B2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46B230321B68E8F200B9D0B2 /* moonrunner_resources */ = {
+			isa = PBXGroup;
+			children = (
+				46B230331B68E8F200B9D0B2 /* ariel.jpg */,
+				46B230341B68E8F200B9D0B2 /* asteroid_belt.png */,
+				46B230351B68E8F200B9D0B2 /* atmosphere.jpg */,
+				46B230361B68E8F200B9D0B2 /* badges.txt */,
+				46B230371B68E8F200B9D0B2 /* blue-btn.png */,
+				46B230381B68E8F200B9D0B2 /* callisto.jpg */,
+				46B230391B68E8F200B9D0B2 /* ceres.jpg */,
+				46B2303A1B68E8F200B9D0B2 /* Default-568h@2x.png */,
+				46B2303B1B68E8F200B9D0B2 /* deimos.jpg */,
+				46B2303C1B68E8F200B9D0B2 /* dione.jpg */,
+				46B2303D1B68E8F200B9D0B2 /* earth.jpg */,
+				46B2303E1B68E8F200B9D0B2 /* enceladus.jpg */,
+				46B2303F1B68E8F200B9D0B2 /* europa.jpg */,
+				46B230401B68E8F200B9D0B2 /* ganymede.jpg */,
+				46B230411B68E8F200B9D0B2 /* green-btn.png */,
+				46B230421B68E8F200B9D0B2 /* iapetus.jpg */,
+				46B230431B68E8F200B9D0B2 /* Icon-App.png */,
+				46B230441B68E8F200B9D0B2 /* Icon-Settings.png */,
+				46B230451B68E8F200B9D0B2 /* Icon-Spotlight.png */,
+				46B230461B68E8F200B9D0B2 /* info@2x.png */,
+				46B230471B68E8F200B9D0B2 /* interstellar_space.jpg */,
+				46B230481B68E8F200B9D0B2 /* io.jpg */,
+				46B230491B68E8F200B9D0B2 /* kuiper_belt.png */,
+				46B2304A1B68E8F200B9D0B2 /* magnetotail.png */,
+				46B2304B1B68E8F200B9D0B2 /* mapPin@2x.png */,
+				46B2304C1B68E8F200B9D0B2 /* mars.jpg */,
+				46B2304D1B68E8F200B9D0B2 /* mimas.jpg */,
+				46B2304E1B68E8F200B9D0B2 /* miranda.jpg */,
+				46B2304F1B68E8F200B9D0B2 /* moon.jpg */,
+				46B230501B68E8F200B9D0B2 /* oberon.jpg */,
+				46B230511B68E8F200B9D0B2 /* phobos.jpg */,
+				46B230521B68E8F200B9D0B2 /* pluto.jpg */,
+				46B230531B68E8F200B9D0B2 /* red-btn.png */,
+				46B230541B68E8F200B9D0B2 /* rhea.jpg */,
+				46B230551B68E8F200B9D0B2 /* saturn.jpg */,
+				46B230561B68E8F200B9D0B2 /* spaceship-gold.png */,
+				46B230571B68E8F200B9D0B2 /* spaceship-silver.png */,
+				46B230581B68E8F200B9D0B2 /* success.wav */,
+				46B230591B68E8F200B9D0B2 /* tethys.jpg */,
+				46B2305A1B68E8F200B9D0B2 /* titan.jpg */,
+				46B2305B1B68E8F200B9D0B2 /* titania.jpg */,
+				46B2305C1B68E8F200B9D0B2 /* triton.jpg */,
+				46B2305D1B68E8F200B9D0B2 /* umbriel.jpg */,
+			);
+			path = moonrunner_resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +397,11 @@
 				TargetAttributes = {
 					46B22FF21B68E16700B9D0B2 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					46B230111B68E16700B9D0B2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -207,9 +433,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B230731B68E8F200B9D0B2 /* io.jpg in Resources */,
+				46B230641B68E8F200B9D0B2 /* ceres.jpg in Resources */,
+				46B2307C1B68E8F200B9D0B2 /* phobos.jpg in Resources */,
+				46B230651B68E8F200B9D0B2 /* Default-568h@2x.png in Resources */,
+				46B230791B68E8F200B9D0B2 /* miranda.jpg in Resources */,
+				46B230621B68E8F200B9D0B2 /* blue-btn.png in Resources */,
+				46B2307E1B68E8F200B9D0B2 /* red-btn.png in Resources */,
+				46B230751B68E8F200B9D0B2 /* magnetotail.png in Resources */,
+				46B2307F1B68E8F200B9D0B2 /* rhea.jpg in Resources */,
 				46B230081B68E16700B9D0B2 /* Main.storyboard in Resources */,
+				46B230611B68E8F200B9D0B2 /* badges.txt in Resources */,
+				46B2306A1B68E8F200B9D0B2 /* europa.jpg in Resources */,
+				46B2306B1B68E8F200B9D0B2 /* ganymede.jpg in Resources */,
+				46B230601B68E8F200B9D0B2 /* atmosphere.jpg in Resources */,
+				46B2305E1B68E8F200B9D0B2 /* ariel.jpg in Resources */,
 				46B2300D1B68E16700B9D0B2 /* LaunchScreen.xib in Resources */,
+				46B2306D1B68E8F200B9D0B2 /* iapetus.jpg in Resources */,
+				46B230851B68E8F200B9D0B2 /* titan.jpg in Resources */,
+				46B230701B68E8F200B9D0B2 /* Icon-Spotlight.png in Resources */,
+				46B2306C1B68E8F200B9D0B2 /* green-btn.png in Resources */,
+				46B230861B68E8F200B9D0B2 /* titania.jpg in Resources */,
+				46B230871B68E8F200B9D0B2 /* triton.jpg in Resources */,
+				46B2307A1B68E8F200B9D0B2 /* moon.jpg in Resources */,
+				46B230631B68E8F200B9D0B2 /* callisto.jpg in Resources */,
+				46B2307B1B68E8F200B9D0B2 /* oberon.jpg in Resources */,
+				46B230841B68E8F200B9D0B2 /* tethys.jpg in Resources */,
+				46B230881B68E8F200B9D0B2 /* umbriel.jpg in Resources */,
 				46B2300A1B68E16700B9D0B2 /* Images.xcassets in Resources */,
+				46B230681B68E8F200B9D0B2 /* earth.jpg in Resources */,
+				46B230691B68E8F200B9D0B2 /* enceladus.jpg in Resources */,
+				46B230721B68E8F200B9D0B2 /* interstellar_space.jpg in Resources */,
+				46B230661B68E8F200B9D0B2 /* deimos.jpg in Resources */,
+				46B2306F1B68E8F200B9D0B2 /* Icon-Settings.png in Resources */,
+				46B230671B68E8F200B9D0B2 /* dione.jpg in Resources */,
+				46B230781B68E8F200B9D0B2 /* mimas.jpg in Resources */,
+				46B230831B68E8F200B9D0B2 /* success.wav in Resources */,
+				46B230761B68E8F200B9D0B2 /* mapPin@2x.png in Resources */,
+				46B230811B68E8F200B9D0B2 /* spaceship-gold.png in Resources */,
+				46B230771B68E8F200B9D0B2 /* mars.jpg in Resources */,
+				46B230821B68E8F200B9D0B2 /* spaceship-silver.png in Resources */,
+				46B2306E1B68E8F200B9D0B2 /* Icon-App.png in Resources */,
+				46B2305F1B68E8F200B9D0B2 /* asteroid_belt.png in Resources */,
+				46B2307D1B68E8F200B9D0B2 /* pluto.jpg in Resources */,
+				46B230741B68E8F200B9D0B2 /* kuiper_belt.png in Resources */,
+				46B230801B68E8F200B9D0B2 /* saturn.jpg in Resources */,
+				46B230711B68E8F200B9D0B2 /* info@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +496,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BF6F671B7312FB00E74BAB /* Run.m in Sources */,
 				46B230051B68E16700B9D0B2 /* DetailViewController.m in Sources */,
-				46B230021B68E16700B9D0B2 /* MasterViewController.m in Sources */,
+				46B230941B68FA8500B9D0B2 /* MathController.m in Sources */,
+				46BF6F6A1B7316D200E74BAB /* MulticolorPolylineSegment.m in Sources */,
+				46577F281B7C740600E34C3B /* BadgeAnnotation.m in Sources */,
 				46B22FFC1B68E16700B9D0B2 /* AppDelegate.m in Sources */,
+				46577F1C1B7B538E00E34C3B /* BadgeEarnStatus.m in Sources */,
+				46577F161B7B487F00E34C3B /* Badge.m in Sources */,
+				46577F221B7B916100E34C3B /* BadgesTableViewController.m in Sources */,
 				46B22FFF1B68E16700B9D0B2 /* MoonRunner.xcdatamodeld in Sources */,
+				46577F191B7B48E800E34C3B /* BadgeController.m in Sources */,
+				46577F1F1B7B90BE00E34C3B /* BadgeCell.m in Sources */,
+				46B2308E1B68EF9E00B9D0B2 /* HomeViewController.m in Sources */,
 				46B22FF91B68E16700B9D0B2 /* main.m in Sources */,
+				46BF6F641B7312FB00E74BAB /* Location.m in Sources */,
+				46B230911B68F04D00B9D0B2 /* NewRunViewController.m in Sources */,
+				46577F251B7C3C7100E34C3B /* BadgeDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +638,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Liao Jack (9EQ5QAG2FS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liao Jack (9EQ5QAG2FS)";
 				INFOPLIST_FILE = MoonRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "50449901-12fe-4ddb-b79d-69feb496e8e9";
 			};
 			name = Debug;
 		};
@@ -367,9 +651,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Liao Jack (9EQ5QAG2FS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liao Jack (9EQ5QAG2FS)";
 				INFOPLIST_FILE = MoonRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "50449901-12fe-4ddb-b79d-69feb496e8e9";
 			};
 			name = Release;
 		};
@@ -426,6 +713,7 @@
 				46B2301E1B68E16700B9D0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46B2301F1B68E16700B9D0B2 /* Build configuration list for PBXNativeTarget "MoonRunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +722,7 @@
 				46B230211B68E16700B9D0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
