@@ -1,5 +1,5 @@
 # MoonRunnerObjc
-track gps in map, and encourage runner with 
+track gps in map, and encourage runner with Badges. The route line can be colorful according to the speed.
 
 ## Where I learn? You can do it absolutely.
 learn from raywenderlish, add auto layout by myself.  
